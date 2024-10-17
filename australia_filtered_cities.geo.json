@@ -1,0 +1,125 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            151.20732,
+            -33.86785
+          ]
+        },
+        "properties": {
+          "name": "Sydney",
+          "feature_code": "PPLA",
+          "population": 4627345
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            144.96332,
+            -37.814
+          ]
+        },
+        "properties": {
+          "name": "Melbourne",
+          "feature_code": "PPLA",
+          "population": 4246375
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            153.02809,
+            -27.46794
+          ]
+        },
+        "properties": {
+          "name": "Brisbane",
+          "feature_code": "PPLA",
+          "population": 2189878
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            115.8614,
+            -31.95224
+          ]
+        },
+        "properties": {
+          "name": "Perth",
+          "feature_code": "PPLA",
+          "population": 1896548
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            138.59863,
+            -34.92866
+          ]
+        },
+        "properties": {
+          "name": "Adelaide",
+          "feature_code": "PPLA",
+          "population": 1225235
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            147.32941,
+            -42.87936
+          ]
+        },
+        "properties": {
+          "name": "Hobart",
+          "feature_code": "PPLA",
+          "population": 216656
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            130.84185,
+            -12.46113
+          ]
+        },
+        "properties": {
+          "name": "Darwin",
+          "feature_code": "PPLA",
+          "population": 129062
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            149.232,
+            -35.35493
+          ]
+        },
+        "properties": {
+          "name": "Canberra",
+          "feature_code": "PPL",
+          "population": 40661
+        }
+      }
+    ]
+  }

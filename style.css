@@ -1,0 +1,63 @@
+header {
+  background-color: #004080; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading style */
+h1 {
+  font-size: 36px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+
+/* Section headings */
+h2 {
+  font-size: 28px;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+/* Paragraph text */
+p {
+  font-size: 15px; 
+  line-height: 1.6; 
+  font-family: 'Verdana', sans-serif; 
+  color: #333;         
+}
+
+#map-info p {
+  font-size: 18px; 
+  font-family: 'Verdana', sans-serif;
+}
+#map-section {
+  margin-top: 30px; 
+}
+
+.age-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#age-trends {
+  flex: 3;
+  margin-right: 20px;
+}
+
+#age-info {
+  flex: 1;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #004d99;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}

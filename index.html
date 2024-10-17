@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian Population Visualisation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.10.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.0"></script>  
+  <style>
+    /* Flexbox container for the map and the text */
+.map-container {
+    display: flex;
+    justify-content: space-around;  /* Spread items evenly with space between them */
+    align-items: flex-start;        /* Align items at the top */
+    margin-bottom: 20px;            /* Space below the section */
+    max-width: 90%;                 /* Use a wider container to fill the page better */
+    margin-left: auto;              /* Center the container */
+    margin-right: auto;             /* Center the container */
+}
+
+#map {
+    flex: 4;                        /* Map takes more space */
+    margin-right: 30px;             /* Space between the map and the text */
+}
+
+#map-info {
+    flex: 3;                        /* Text takes slightly less space */
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+
+    #map, #map-info {
+        flex: none;  /* Reset flex properties */
+        width: 100%; /* Make both elements take full width */
+    }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Australia’s Population Dynamics</h1>
+  </header>
+
+  <main>
+    <section id="map-section">
+      <div class="map-container">
+        <!-- Map goes here -->
+        <div id="map"></div>
+  
+        <!-- Text description goes here -->
+        <div id="map-info">
+          <p>
+            This page illustrates insights into Australia's population dynamics through a series of interactive graphs. The visualisations highlight key demographic trends across major Australian cities from 2017 to 2021, allowing for a clear comparison of population sizes, growth rates, and population distribution. In addition to showcasing overall population figures, these graphs delve deeper into specific metrics such as the distribution of male and female populations, the median age in each city, and population density changes. Together, these data points provide a comprehensive view of how urban populations have evolved over time, offering valuable insights for urban planning.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="charts-section">
+      <h2>Population Comparisons</h2>
+      <div id="population-charts"></div>
+      <div id="gender_pop-chart"></div>
+    </section>
+
+    <section id="age-section" class="age-container">
+      <h2>Age Trends</h2>
+      <div id="age-trends"></div>
+      <div id="citySelection">
+  <label><input type="checkbox" value="Adelaide" checked> Adelaide</label>
+  <label><input type="checkbox" value="Brisbane" checked> Brisbane</label>
+  <label><input type="checkbox" value="Canberra" checked> Canberra</label>
+  <label><input type="checkbox" value="Darwin" checked> Darwin</label>
+  <label><input type="checkbox" value="Hobart" checked> Hobart</label>
+  <label><input type="checkbox" value="Melbourne" checked> Melbourne</label>
+  <label><input type="checkbox" value="Perth" checked> Perth</label>
+  <label><input type="checkbox" value="Sydney" checked> Sydney</label>
+      <div>
+        <div id="age-info">
+          <p>
+            The charts on this page offer a comprehensive view of Australia’s population dynamics from 2017 to 2021. The first chart shows the overall population trends across major cities, while the second chart compares the male and female populations in each city. Together, these charts provide insights into the growth patterns and gender distribution in urban centers. For example, Sydney consistently shows a higher overall population than other cities during this period.
+
+            The chart to the left highlights the trends in the median age of the population for different cities over the same time period. Notably, Hobart has one of the highest median ages, while Darwin's population tends to be younger. The checkboxes above can be used to filter the data by specific cities, allowing for a more detailed look at how the population age has evolved in each location.
+          </p>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data sourced from Kaggle</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
