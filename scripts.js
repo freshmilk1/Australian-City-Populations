@@ -8,14 +8,14 @@ const mapEmbed = {
   "layer": [
     {
       "data": {
-        "url": "data/states.geo.json",
+        "url": "states.geo.json",
         "format": {"type": "json", "property": "features"}
       },
       "mark": {"type": "geoshape", "fill": "#ddd", "stroke": "black"}, 
     },
     {
       "data": {
-        "url": "data/australia_filtered_cities.geo.json",
+        "url": "australia_filtered_cities.geo.json",
         "format": {"type": "json", "property": "features"}
       },
       "mark": {
@@ -43,7 +43,7 @@ const populationGraph = {
   },
   "width": 500,
   "height": 300,
-  "data": {"url": "data/data_population.csv"},
+  "data": {"url": "data_population.csv"},
   "mark": "bar",
   "encoding": {
     "x": {"field": "City", "type": "nominal", "axis": {"title": "City"}},
@@ -86,7 +86,7 @@ const genderCompare = {
   },
   "width": 500,
   "height": 300,
-  "data": {"url": "data/gender_population.csv"},
+  "data": {"url": "gender_population.csv"},
   "mark": "bar",
   "encoding": {
     "x": {"field": "City", "type": "nominal", "axis": {"title": "City"}},
@@ -131,7 +131,7 @@ const ageGraph = {
   },
   "width": 500,
   "height": 300,
-  "data": {"url": "data/median_age.csv"},
+  "data": {"url": "median_age.csv"},
   "mark": "line",
   "transform": [
     {
